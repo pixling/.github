@@ -2,7 +2,7 @@
 
 Support is **best-effort**. We reply in **English**; Japanese submissions are also welcome, and reports may be submitted in any language. We cannot promise a response time or a fix.
 
-- Documentation: https://pixling.app/docs
+- Documentation: https://pixling.app/docs (from launch)
 - Bugs: https://github.com/pixling/pixling/issues/new/choose
 - Ideas and questions: https://github.com/pixling/pixling/discussions (Ideas / Q&A)
 - Billing, refunds, transaction IDs, wallet details, or personal circumstances: [support@pixling.app](mailto:support@pixling.app)
