@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://pixling.app/residents/fox.gif" height="64" alt="">&nbsp;&nbsp;<img src="https://pixling.app/residents/calico.gif" height="64" alt="">&nbsp;&nbsp;<img src="https://pixling.app/residents/dino.gif" height="64" alt="">&nbsp;&nbsp;<img src="https://pixling.app/residents/poodle.gif" height="64" alt="">&nbsp;&nbsp;<img src="https://pixling.app/residents/cactus.gif" height="64" alt="">&nbsp;&nbsp;<img src="https://pixling.app/residents/frog.gif" height="64" alt="">&nbsp;&nbsp;<img src="https://pixling.app/residents/dog.gif" height="64" alt="">&nbsp;&nbsp;<img src="https://pixling.app/residents/rabbit.gif" height="64" alt="">
+<img src="residents/fox.gif" height="64" alt="">&nbsp;&nbsp;<img src="residents/calico.gif" height="64" alt="">&nbsp;&nbsp;<img src="residents/dino.gif" height="64" alt="">&nbsp;&nbsp;<img src="residents/poodle.gif" height="64" alt="">&nbsp;&nbsp;<img src="residents/cactus.gif" height="64" alt="">&nbsp;&nbsp;<img src="residents/frog.gif" height="64" alt="">&nbsp;&nbsp;<img src="residents/dog.gif" height="64" alt="">&nbsp;&nbsp;<img src="residents/rabbit.gif" height="64" alt="">
 </p>
 
 <h3 align="center">Small pixel friends for your Mac desktop.</h3>
