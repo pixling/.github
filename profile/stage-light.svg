@@ -11,24 +11,24 @@
     .font-mono {
       font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace;
     }
-    /* Additive wing-flap patch: base Angel stays at opacity 1 forever */
+    /* Additive wing-flap patch: rests still most of the 8s cycle; two quick flaps at 18% and 62% */
     .wing-flap {
-      animation: k-flap 0.96s steps(1, end) infinite;
+      animation: k-flap 8s steps(1, end) infinite;
       opacity: 0;
     }
     @keyframes k-flap {
-      0%, 100% { opacity: 0; }
-      50% { opacity: 1; }
+      0%, 21%, 27%, 65%, 71%, 100% { opacity: 0; }
+      18%, 24%, 62%, 68% { opacity: 1; }
     }
 
-    /* Additive eyelid patch: closes eyes for 150ms every 3.2s */
+    /* Additive eyelid patch: one short blink at 38% of the 8s cycle */
     .eye-blink {
-      animation: k-blink 3.2s steps(1, end) infinite;
+      animation: k-blink 8s steps(1, end) infinite;
       opacity: 0;
     }
     @keyframes k-blink {
-      0%, 95%, 100% { opacity: 0; }
-      90% { opacity: 1; }
+      0%, 40%, 100% { opacity: 0; }
+      38% { opacity: 1; }
     }
 
     /* Additive answered state overlay (65% to 92% of 8s cycle) */
