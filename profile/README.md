@@ -1,13 +1,16 @@
 <p align="center">
-<img src="angel.gif" width="800" alt="The Pixling angel peeking over the top edge of a window, flapping one small wing">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="stage-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="stage-light.svg">
+  <img src="stage-light.svg" width="780" alt="Pixling on a Mac desktop: the built-in pixel angel peeks over a terminal window while Claude Code speaks and asks a question through a night-navy speech bubble.">
+</picture>
 </p>
 
-<h3 align="center">Small pixel residents for your Mac desktop.</h3>
+<h3 align="center">Give your AI agent a face on your Mac desktop.</h3>
 
 <p align="center">
-That’s the angel. It comes with the app, and it has been peeking over that window since you got here.<br>
-Residents pay no rent and do no work. Your AI agent does the work, and talks to you through one:<br>
-<b>“312 tests passed.”</b> &nbsp; <b>“Deploy to staging?”</b>
+That’s the angel. It comes with the app, and it has been peeking over that terminal since you got here.<br>
+Residents pay no rent and do no work. Your AI agent does the work, and speaks or asks through one.
 </p>
 
 <p align="center">
@@ -16,13 +19,13 @@ They never look at your screen or your keys. Mostly they just sit there, which i
 </p>
 
 <p align="center">
-<b>Free. Coming soon to the Mac App Store.</b>
+<b>Free · Coming soon to the Mac App Store</b>
 </p>
 
 <p align="center">
-<a href="https://pixling.app">Website</a> ·
-<a href="https://github.com/pixling/pixling">Watch for the release</a> ·
-<a href="https://github.com/pixling/pixling/discussions">Ideas and questions</a> ·
+<a href="https://pixling.app"><b>pixling.app</b></a> &nbsp;·&nbsp;
+<a href="https://github.com/pixling/pixling">Watch for the release</a> &nbsp;·&nbsp;
+<a href="https://github.com/pixling/pixling/discussions">Ideas and questions</a> &nbsp;·&nbsp;
 <a href="mailto:support@pixling.app">support@pixling.app</a>
 </p>
 

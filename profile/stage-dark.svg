@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 268" width="780" height="268" role="img" aria-label="Pixling on a Mac desktop: the built-in pixel angel peeks over a terminal window while Claude Code speaks and asks a question through a night-navy speech bubble.">
+  <defs>
+    <radialGradient id="glow" cx="36%" cy="24%" r="65%">
+      <stop offset="0%" stop-color="rgba(178, 216, 243, 0.08)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    </radialGradient>
+    <clipPath id="term-clip">
+      <rect x="26" y="94" width="362" height="148" rx="10"/>
+    </clipPath>
+  </defs>
+  <style>
+    .font-ui {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    }
+    .font-mono {
+      font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace;
+    }
+
+    .a-idle { animation: k-idle 8s steps(1, end) infinite; }
+    .a-flap { animation: k-flap 8s steps(1, end) infinite; opacity: 0; }
+    .a-blink { animation: k-blink 8s steps(1, end) infinite; opacity: 0; }
+    .a-cheer0 { animation: k-cheer0 8s steps(1, end) infinite; opacity: 0; }
+    .a-cheer1 { animation: k-cheer1 8s steps(1, end) infinite; opacity: 0; }
+
+    @keyframes k-idle {
+      0%, 100% { opacity: 1; }
+      6%, 12%, 18%, 24%, 30%, 42%, 48%, 54%, 60%, 66% { opacity: 0; }
+      10%, 16%, 22%, 28%, 36%, 46%, 52%, 58%, 64%, 70% { opacity: 1; }
+      72%, 91% { opacity: 0; }
+      92% { opacity: 1; }
+    }
+    @keyframes k-flap {
+      0%, 100% { opacity: 0; }
+      6%, 18%, 30%, 42%, 54%, 66% { opacity: 1; }
+      10%, 22%, 34%, 46%, 58%, 70% { opacity: 0; }
+    }
+    @keyframes k-blink {
+      0%, 100% { opacity: 0; }
+      12%, 24%, 48%, 60% { opacity: 1; }
+      14%, 26%, 50%, 62% { opacity: 0; }
+    }
+    @keyframes k-cheer0 {
+      0%, 71.9%, 92%, 100% { opacity: 0; }
+      72%, 78%, 84%, 90% { opacity: 1; }
+      75%, 81%, 87% { opacity: 0; }
+    }
+    @keyframes k-cheer1 {
+      0%, 74.9%, 90%, 100% { opacity: 0; }
+      75%, 81%, 87% { opacity: 1; }
+      78%, 84%, 90% { opacity: 0; }
+    }
+
+    .chip-deploy-idle { animation: k-chip-idle 8s ease infinite; }
+    .chip-deploy-on { animation: k-chip-on 8s ease infinite; opacity: 0; }
+    .chip-notyet { animation: k-chip-dim 8s ease infinite; }
+    .term-deploy-done { animation: k-term-done 8s ease infinite; opacity: 0; }
+
+    @keyframes k-chip-idle {
+      0%, 69%, 93%, 100% { opacity: 1; }
+      71%, 91% { opacity: 0; }
+    }
+    @keyframes k-chip-on {
+      0%, 69%, 93%, 100% { opacity: 0; }
+      71%, 91% { opacity: 1; }
+    }
+    @keyframes k-chip-dim {
+      0%, 69%, 93%, 100% { opacity: 1; }
+      71%, 91% { opacity: 0.45; }
+    }
+    @keyframes k-term-done {
+      0%, 71%, 93%, 100% { opacity: 0; }
+      73%, 91% { opacity: 1; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .a-idle, .chip-deploy-idle, .chip-notyet { animation: none !important; opacity: 1 !important; }
+      .a-flap, .a-blink, .a-cheer0, .a-cheer1, .chip-deploy-on, .term-deploy-done { animation: none !important; opacity: 0 !important; }
+    }
+
+  </style>
+
+  <!-- 1. Mac Desk Stage Ground -->
+  <rect x="2" y="2" width="776" height="264" rx="14" fill="#151824" stroke="#2B3043" stroke-width="1.5"/>
+  <rect x="2" y="2" width="776" height="264" rx="14" fill="url(#glow)"/>
+
+  <!-- 2. Mac Terminal Window (`agent — zsh`) -->
+  <rect x="26" y="100" width="362" height="148" rx="10" fill="rgba(8, 9, 16, 0.32)"/>
+  <g clip-path="url(#term-clip)">
+    <rect x="26" y="94" width="362" height="148" fill="#1B1D24"/>
+    <rect x="26" y="94" width="362" height="28" fill="#262934"/>
+    <line x1="26" y1="122" x2="388" y2="122" stroke="#353948" stroke-width="1"/>
+    <circle cx="42" cy="108" r="5" fill="#EE6A5F"/>
+    <circle cx="58" cy="108" r="5" fill="#F5BE4F"/>
+    <circle cx="74" cy="108" r="5" fill="#61C454"/>
+    <text x="166" y="112" class="font-mono" font-size="11.5" fill="#9DA3B4">agent — zsh</text>
+
+    <g class="font-mono" font-size="12.5" fill="#E8E6E1">
+      <text x="44" y="148">
+        <tspan fill="#7E8494">$</tspan> claude <tspan fill="#F497AE">"ship the release"</tspan>
+      </text>
+      <text x="44" y="174" fill="#B3B8CC">
+        <tspan fill="#F497AE" font-weight="700">›</tspan> Running the test suite…
+      </text>
+      <text x="44" y="200">
+        <tspan fill="#75C991" font-weight="700">✓</tspan> 312 tests passed
+      </text>
+      <g class="chip-deploy-idle">
+        <text x="44" y="226" fill="#B3B8CC">
+          <tspan fill="#F497AE" font-weight="700">?</tspan> Asking on desk: <tspan fill="#F4ECDC">Deploy to staging?</tspan>
+        </text>
+      </g>
+      <g class="term-deploy-done">
+        <text x="44" y="226" fill="#75C991">
+          <tspan font-weight="700">✓</tspan> Answered on desk: <tspan fill="#F4ECDC" font-weight="600">Deploy</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+  <rect x="26" y="94" width="362" height="148" rx="10" fill="none" stroke="#3A3F52" stroke-width="1"/>
+
+  <!-- 3. Built-in Angel gripping the terminal window's top edge -->
+  <g id="angel-sprite">
+    <g class="a-idle"><path fill="#23263A" d="M310,10h8v4h-8zM318,14h4v4h-4zM354,14h8v4h-8zM318,18h4v4h-4zM346,18h8v4h-8zM362,18h4v4h-4zM330,22h4v4h-4zM342,22h4v4h-4zM362,22h4v4h-4zM334,26h8v4h-8zM362,26h4v4h-4zM342,30h4v4h-4zM362,30h4v4h-4zM346,34h4v4h-4zM358,34h4v4h-4zM346,38h4v4h-4zM354,38h4v4h-4zM350,42h4v4h-4zM350,46h4v4h-4zM354,50h4v4h-4zM282,54h8v4h-8zM314,54h8v4h-8zM354,54h4v4h-4zM282,58h8v4h-8zM314,58h8v4h-8zM354,58h4v4h-4zM282,62h8v4h-8zM314,62h8v4h-8zM354,62h4v4h-4zM282,66h8v4h-8zM314,66h8v4h-8zM354,66h4v4h-4zM350,70h4v4h-4zM298,74h4v4h-4zM350,74h4v4h-4zM346,78h4v4h-4zM262,82h4v4h-4zM346,82h4v4h-4zM266,86h4v4h-4zM342,86h4v4h-4zM270,90h4v4h-4zM302,90h12v4h-12zM330,90h12v4h-12zM298,94h4v4h-4zM314,94h4v4h-4zM326,94h4v4h-4zM342,94h4v4h-4zM298,98h4v4h-4zM314,98h4v4h-4zM326,98h4v4h-4zM342,98h4v4h-4zM298,102h4v4h-4zM314,102h4v4h-4zM326,102h4v4h-4zM342,102h4v4h-4zM302,106h12v4h-12zM330,106h12v4h-12z"/>
+      <path fill="#7A6E86" d="M294,14h24v4h-24zM282,18h12v4h-12zM322,18h8v4h-8zM274,22h8v4h-8zM270,26h4v4h-4zM266,30h4v4h-4zM262,34h4v4h-4zM258,38h4v4h-4zM258,42h4v4h-4zM254,46h4v4h-4zM254,50h4v4h-4zM254,54h4v4h-4zM254,58h4v4h-4zM254,62h4v4h-4zM254,66h4v4h-4zM254,70h4v4h-4zM258,74h4v4h-4zM258,78h4v4h-4z"/>
+      <path fill="#FFF2D8" d="M294,18h24v4h-24zM282,22h48v4h-48zM274,26h60v4h-60zM270,30h68v4h-68zM266,34h16v4h-16zM294,34h44v4h-44zM262,38h16v4h-16zM294,38h48v4h-48zM262,42h16v4h-16zM290,42h52v4h-52zM258,46h84v4h-84zM258,50h80v4h-80zM258,54h24v4h-24zM290,54h24v4h-24zM322,54h16v4h-16zM258,58h24v4h-24zM290,58h24v4h-24zM322,58h16v4h-16zM258,62h24v4h-24zM290,62h24v4h-24zM322,62h12v4h-12zM258,66h24v4h-24zM290,66h24v4h-24zM322,66h8v4h-8zM258,70h12v4h-12zM278,70h48v4h-48zM262,74h36v4h-36zM302,74h20v4h-20zM266,78h52v4h-52zM270,82h40v4h-40zM286,86h8v4h-8zM302,94h12v4h-12zM330,94h12v4h-12zM302,98h12v4h-12zM330,98h12v4h-12zM302,102h4v4h-4zM310,102h4v4h-4zM330,102h4v4h-4zM338,102h4v4h-4z"/>
+      <path fill="#E6F5FF" d="M354,18h8v4h-8zM346,22h16v4h-16zM342,26h20v4h-20zM346,30h8v4h-8zM358,30h4v4h-4z"/>
+      <path fill="#F5DDB3" d="M338,30h4v4h-4zM338,34h4v4h-4zM342,38h4v4h-4zM342,42h4v4h-4zM342,46h4v4h-4zM338,50h8v4h-8zM338,54h8v4h-8zM338,58h4v4h-4zM334,62h8v4h-8zM330,66h8v4h-8zM326,70h4v4h-4zM322,74h8v4h-8zM262,78h4v4h-4zM318,78h8v4h-8zM266,82h4v4h-4zM310,82h12v4h-12zM270,86h16v4h-16zM294,86h20v4h-20zM282,90h16v4h-16zM306,102h4v4h-4zM334,102h4v4h-4z"/>
+      <path fill="#B2D8F3" d="M354,30h4v4h-4zM350,34h8v4h-8zM350,38h4v4h-4z"/>
+      <path fill="#FFFCF3" d="M282,34h12v4h-12zM278,38h16v4h-16zM278,42h12v4h-12z"/>
+      <path fill="#E3BC8A" d="M342,34h4v4h-4zM346,42h4v4h-4zM346,46h4v4h-4zM346,50h8v4h-8zM346,54h8v4h-8zM342,58h12v4h-12zM342,62h12v4h-12zM338,66h16v4h-16zM338,70h12v4h-12zM330,74h20v4h-20zM326,78h20v4h-20zM322,82h24v4h-24zM314,86h28v4h-28zM274,90h8v4h-8zM298,90h4v4h-4zM314,90h16v4h-16z"/>
+      <path fill="#F2928C" d="M270,70h8v4h-8zM330,70h8v4h-8z"/></g>
+    <g class="a-flap"><path fill="#23263A" d="M310,10h8v4h-8zM318,14h4v4h-4zM318,18h4v4h-4zM330,22h4v4h-4zM334,26h8v4h-8zM350,26h8v4h-8zM342,30h8v4h-8zM358,30h4v4h-4zM342,34h4v4h-4zM362,34h4v4h-4zM346,38h4v4h-4zM358,38h4v4h-4zM350,42h8v4h-8zM350,46h4v4h-4zM354,50h4v4h-4zM282,54h8v4h-8zM314,54h8v4h-8zM354,54h4v4h-4zM282,58h8v4h-8zM314,58h8v4h-8zM354,58h4v4h-4zM282,62h8v4h-8zM314,62h8v4h-8zM354,62h4v4h-4zM282,66h8v4h-8zM314,66h8v4h-8zM354,66h4v4h-4zM350,70h4v4h-4zM298,74h4v4h-4zM350,74h4v4h-4zM346,78h4v4h-4zM262,82h4v4h-4zM346,82h4v4h-4zM266,86h4v4h-4zM342,86h4v4h-4zM270,90h4v4h-4zM302,90h12v4h-12zM330,90h12v4h-12zM298,94h4v4h-4zM314,94h4v4h-4zM326,94h4v4h-4zM342,94h4v4h-4zM298,98h4v4h-4zM314,98h4v4h-4zM326,98h4v4h-4zM342,98h4v4h-4zM298,102h4v4h-4zM314,102h4v4h-4zM326,102h4v4h-4zM342,102h4v4h-4zM302,106h12v4h-12zM330,106h12v4h-12z"/>
+      <path fill="#7A6E86" d="M294,14h24v4h-24zM282,18h12v4h-12zM322,18h8v4h-8zM274,22h8v4h-8zM270,26h4v4h-4zM266,30h4v4h-4zM262,34h4v4h-4zM258,38h4v4h-4zM258,42h4v4h-4zM254,46h4v4h-4zM254,50h4v4h-4zM254,54h4v4h-4zM254,58h4v4h-4zM254,62h4v4h-4zM254,66h4v4h-4zM254,70h4v4h-4zM258,74h4v4h-4zM258,78h4v4h-4z"/>
+      <path fill="#FFF2D8" d="M294,18h24v4h-24zM282,22h48v4h-48zM274,26h60v4h-60zM270,30h68v4h-68zM266,34h16v4h-16zM294,34h44v4h-44zM262,38h16v4h-16zM294,38h48v4h-48zM262,42h16v4h-16zM290,42h52v4h-52zM258,46h84v4h-84zM258,50h80v4h-80zM258,54h24v4h-24zM290,54h24v4h-24zM322,54h16v4h-16zM258,58h24v4h-24zM290,58h24v4h-24zM322,58h16v4h-16zM258,62h24v4h-24zM290,62h24v4h-24zM322,62h12v4h-12zM258,66h24v4h-24zM290,66h24v4h-24zM322,66h8v4h-8zM258,70h12v4h-12zM278,70h48v4h-48zM262,74h36v4h-36zM302,74h20v4h-20zM266,78h52v4h-52zM270,82h40v4h-40zM286,86h8v4h-8zM302,94h12v4h-12zM330,94h12v4h-12zM302,98h12v4h-12zM330,98h12v4h-12zM302,102h4v4h-4zM310,102h4v4h-4zM330,102h4v4h-4zM338,102h4v4h-4z"/>
+      <path fill="#F5DDB3" d="M338,30h4v4h-4zM338,34h4v4h-4zM342,38h4v4h-4zM342,42h4v4h-4zM342,46h4v4h-4zM338,50h8v4h-8zM338,54h8v4h-8zM338,58h4v4h-4zM334,62h8v4h-8zM330,66h8v4h-8zM326,70h4v4h-4zM322,74h8v4h-8zM262,78h4v4h-4zM318,78h8v4h-8zM266,82h4v4h-4zM310,82h12v4h-12zM270,86h16v4h-16zM294,86h20v4h-20zM282,90h16v4h-16zM306,102h4v4h-4zM334,102h4v4h-4z"/>
+      <path fill="#E6F5FF" d="M350,30h8v4h-8zM346,34h12v4h-12z"/>
+      <path fill="#FFFCF3" d="M282,34h12v4h-12zM278,38h16v4h-16zM278,42h12v4h-12z"/>
+      <path fill="#B2D8F3" d="M358,34h4v4h-4zM350,38h8v4h-8z"/>
+      <path fill="#E3BC8A" d="M346,42h4v4h-4zM346,46h4v4h-4zM346,50h8v4h-8zM346,54h8v4h-8zM342,58h12v4h-12zM342,62h12v4h-12zM338,66h16v4h-16zM338,70h12v4h-12zM330,74h20v4h-20zM326,78h20v4h-20zM322,82h24v4h-24zM314,86h28v4h-28zM274,90h8v4h-8zM298,90h4v4h-4zM314,90h16v4h-16z"/>
+      <path fill="#F2928C" d="M270,70h8v4h-8zM330,70h8v4h-8z"/></g>
+    <g class="a-blink"><path fill="#23263A" d="M310,10h8v4h-8zM318,14h4v4h-4zM354,14h8v4h-8zM318,18h4v4h-4zM346,18h8v4h-8zM362,18h4v4h-4zM330,22h4v4h-4zM342,22h4v4h-4zM362,22h4v4h-4zM334,26h8v4h-8zM362,26h4v4h-4zM342,30h4v4h-4zM362,30h4v4h-4zM346,34h4v4h-4zM358,34h4v4h-4zM346,38h4v4h-4zM354,38h4v4h-4zM350,42h4v4h-4zM350,46h4v4h-4zM354,50h4v4h-4zM354,54h4v4h-4zM354,58h4v4h-4zM354,62h4v4h-4zM282,66h8v4h-8zM314,66h8v4h-8zM354,66h4v4h-4zM350,70h4v4h-4zM298,74h4v4h-4zM350,74h4v4h-4zM346,78h4v4h-4zM262,82h4v4h-4zM346,82h4v4h-4zM266,86h4v4h-4zM342,86h4v4h-4zM270,90h4v4h-4zM302,90h12v4h-12zM330,90h12v4h-12zM298,94h4v4h-4zM314,94h4v4h-4zM326,94h4v4h-4zM342,94h4v4h-4zM298,98h4v4h-4zM314,98h4v4h-4zM326,98h4v4h-4zM342,98h4v4h-4zM298,102h4v4h-4zM314,102h4v4h-4zM326,102h4v4h-4zM342,102h4v4h-4zM302,106h12v4h-12zM330,106h12v4h-12z"/>
+      <path fill="#7A6E86" d="M294,14h24v4h-24zM282,18h12v4h-12zM322,18h8v4h-8zM274,22h8v4h-8zM270,26h4v4h-4zM266,30h4v4h-4zM262,34h4v4h-4zM258,38h4v4h-4zM258,42h4v4h-4zM254,46h4v4h-4zM254,50h4v4h-4zM254,54h4v4h-4zM254,58h4v4h-4zM254,62h4v4h-4zM254,66h4v4h-4zM254,70h4v4h-4zM258,74h4v4h-4zM258,78h4v4h-4z"/>
+      <path fill="#FFF2D8" d="M294,18h24v4h-24zM282,22h48v4h-48zM274,26h60v4h-60zM270,30h68v4h-68zM266,34h16v4h-16zM294,34h44v4h-44zM262,38h16v4h-16zM294,38h48v4h-48zM262,42h16v4h-16zM290,42h52v4h-52zM258,46h84v4h-84zM258,50h80v4h-80zM258,54h80v4h-80zM258,58h80v4h-80zM258,62h76v4h-76zM258,66h24v4h-24zM290,66h24v4h-24zM322,66h8v4h-8zM258,70h12v4h-12zM278,70h48v4h-48zM262,74h36v4h-36zM302,74h20v4h-20zM266,78h52v4h-52zM270,82h40v4h-40zM286,86h8v4h-8zM302,94h12v4h-12zM330,94h12v4h-12zM302,98h12v4h-12zM330,98h12v4h-12zM302,102h4v4h-4zM310,102h4v4h-4zM330,102h4v4h-4zM338,102h4v4h-4z"/>
+      <path fill="#E6F5FF" d="M354,18h8v4h-8zM346,22h16v4h-16zM342,26h20v4h-20zM346,30h8v4h-8zM358,30h4v4h-4z"/>
+      <path fill="#F5DDB3" d="M338,30h4v4h-4zM338,34h4v4h-4zM342,38h4v4h-4zM342,42h4v4h-4zM342,46h4v4h-4zM338,50h8v4h-8zM338,54h8v4h-8zM338,58h4v4h-4zM334,62h8v4h-8zM330,66h8v4h-8zM326,70h4v4h-4zM322,74h8v4h-8zM262,78h4v4h-4zM318,78h8v4h-8zM266,82h4v4h-4zM310,82h12v4h-12zM270,86h16v4h-16zM294,86h20v4h-20zM282,90h16v4h-16zM306,102h4v4h-4zM334,102h4v4h-4z"/>
+      <path fill="#B2D8F3" d="M354,30h4v4h-4zM350,34h8v4h-8zM350,38h4v4h-4z"/>
+      <path fill="#FFFCF3" d="M282,34h12v4h-12zM278,38h16v4h-16zM278,42h12v4h-12z"/>
+      <path fill="#E3BC8A" d="M342,34h4v4h-4zM346,42h4v4h-4zM346,46h4v4h-4zM346,50h8v4h-8zM346,54h8v4h-8zM342,58h12v4h-12zM342,62h12v4h-12zM338,66h16v4h-16zM338,70h12v4h-12zM330,74h20v4h-20zM326,78h20v4h-20zM322,82h24v4h-24zM314,86h28v4h-28zM274,90h8v4h-8zM298,90h4v4h-4zM314,90h16v4h-16z"/>
+      <path fill="#F2928C" d="M270,70h8v4h-8zM330,70h8v4h-8z"/></g>
+    <g class="a-cheer0"><path fill="#23263A" d="M310,6h8v4h-8zM318,10h4v4h-4zM318,14h4v4h-4zM330,18h4v4h-4zM334,22h8v4h-8zM350,22h8v4h-8zM342,26h8v4h-8zM358,26h4v4h-4zM342,30h4v4h-4zM362,30h4v4h-4zM346,34h4v4h-4zM358,34h4v4h-4zM350,38h8v4h-8zM350,42h4v4h-4zM354,46h4v4h-4zM282,50h8v4h-8zM314,50h8v4h-8zM354,50h4v4h-4zM278,54h4v4h-4zM290,54h4v4h-4zM310,54h4v4h-4zM322,54h4v4h-4zM354,54h4v4h-4zM354,58h4v4h-4zM354,62h4v4h-4zM350,66h4v4h-4zM298,70h4v4h-4zM350,70h4v4h-4zM346,74h4v4h-4zM262,78h4v4h-4zM346,78h4v4h-4zM266,82h4v4h-4zM342,82h4v4h-4zM270,86h4v4h-4zM302,86h12v4h-12zM330,86h12v4h-12zM298,94h4v4h-4zM314,94h4v4h-4zM326,94h4v4h-4zM342,94h4v4h-4zM298,98h4v4h-4zM314,98h4v4h-4zM326,98h4v4h-4zM342,98h4v4h-4zM298,102h4v4h-4zM314,102h4v4h-4zM326,102h4v4h-4zM342,102h4v4h-4zM302,106h12v4h-12zM330,106h12v4h-12z"/>
+      <path fill="#7A6E86" d="M294,10h24v4h-24zM282,14h12v4h-12zM322,14h8v4h-8zM274,18h8v4h-8zM270,22h4v4h-4zM266,26h4v4h-4zM262,30h4v4h-4zM258,34h4v4h-4zM258,38h4v4h-4zM254,42h4v4h-4zM254,46h4v4h-4zM254,50h4v4h-4zM254,54h4v4h-4zM254,58h4v4h-4zM254,62h4v4h-4zM254,66h4v4h-4zM258,70h4v4h-4zM258,74h4v4h-4z"/>
+      <path fill="#FFF2D8" d="M294,14h24v4h-24zM282,18h48v4h-48zM274,22h60v4h-60zM270,26h68v4h-68zM266,30h16v4h-16zM294,30h44v4h-44zM262,34h16v4h-16zM294,34h48v4h-48zM262,38h16v4h-16zM290,38h52v4h-52zM258,42h84v4h-84zM258,46h80v4h-80zM258,50h24v4h-24zM290,50h24v4h-24zM322,50h16v4h-16zM258,54h20v4h-20zM282,54h8v4h-8zM294,54h16v4h-16zM314,54h8v4h-8zM326,54h12v4h-12zM258,58h76v4h-76zM258,62h72v4h-72zM258,66h12v4h-12zM278,66h48v4h-48zM262,70h36v4h-36zM302,70h20v4h-20zM266,74h52v4h-52zM270,78h40v4h-40zM286,82h8v4h-8zM302,94h12v4h-12zM330,94h12v4h-12zM302,98h12v4h-12zM330,98h12v4h-12zM302,102h4v4h-4zM310,102h4v4h-4zM330,102h4v4h-4zM338,102h4v4h-4z"/>
+      <path fill="#F5DDB3" d="M338,26h4v4h-4zM338,30h4v4h-4zM342,34h4v4h-4zM342,38h4v4h-4zM342,42h4v4h-4zM338,46h8v4h-8zM338,50h8v4h-8zM338,54h4v4h-4zM334,58h8v4h-8zM330,62h8v4h-8zM326,66h4v4h-4zM322,70h8v4h-8zM262,74h4v4h-4zM318,74h8v4h-8zM266,78h4v4h-4zM310,78h12v4h-12zM270,82h16v4h-16zM294,82h20v4h-20zM282,86h16v4h-16zM306,102h4v4h-4zM334,102h4v4h-4z"/>
+      <path fill="#E6F5FF" d="M350,26h8v4h-8zM346,30h12v4h-12z"/>
+      <path fill="#FFFCF3" d="M282,30h12v4h-12zM278,34h16v4h-16zM278,38h12v4h-12z"/>
+      <path fill="#B2D8F3" d="M358,30h4v4h-4zM350,34h8v4h-8z"/>
+      <path fill="#E3BC8A" d="M346,38h4v4h-4zM346,42h4v4h-4zM346,46h8v4h-8zM346,50h8v4h-8zM342,54h12v4h-12zM342,58h12v4h-12zM338,62h16v4h-16zM338,66h12v4h-12zM330,70h20v4h-20zM326,74h20v4h-20zM322,78h24v4h-24zM314,82h28v4h-28zM274,86h8v4h-8zM298,86h4v4h-4zM314,86h16v4h-16z"/>
+      <path fill="#F2928C" d="M270,66h8v4h-8zM330,66h8v4h-8z"/></g>
+    <g class="a-cheer1"><path fill="#23263A" d="M310,6h8v4h-8zM318,10h4v4h-4zM354,10h8v4h-8zM318,14h4v4h-4zM346,14h8v4h-8zM362,14h4v4h-4zM330,18h4v4h-4zM342,18h4v4h-4zM362,18h4v4h-4zM334,22h8v4h-8zM362,22h4v4h-4zM342,26h4v4h-4zM362,26h4v4h-4zM346,30h4v4h-4zM358,30h4v4h-4zM346,34h4v4h-4zM354,34h4v4h-4zM350,38h4v4h-4zM350,42h4v4h-4zM354,46h4v4h-4zM282,50h8v4h-8zM314,50h8v4h-8zM354,50h4v4h-4zM278,54h4v4h-4zM290,54h4v4h-4zM310,54h4v4h-4zM322,54h4v4h-4zM354,54h4v4h-4zM354,58h4v4h-4zM354,62h4v4h-4zM350,66h4v4h-4zM298,70h4v4h-4zM350,70h4v4h-4zM346,74h4v4h-4zM262,78h4v4h-4zM346,78h4v4h-4zM266,82h4v4h-4zM342,82h4v4h-4zM270,86h4v4h-4zM302,86h12v4h-12zM330,86h12v4h-12zM298,94h4v4h-4zM314,94h4v4h-4zM326,94h4v4h-4zM342,94h4v4h-4zM298,98h4v4h-4zM314,98h4v4h-4zM326,98h4v4h-4zM342,98h4v4h-4zM298,102h4v4h-4zM314,102h4v4h-4zM326,102h4v4h-4zM342,102h4v4h-4zM302,106h12v4h-12zM330,106h12v4h-12z"/>
+      <path fill="#7A6E86" d="M294,10h24v4h-24zM282,14h12v4h-12zM322,14h8v4h-8zM274,18h8v4h-8zM270,22h4v4h-4zM266,26h4v4h-4zM262,30h4v4h-4zM258,34h4v4h-4zM258,38h4v4h-4zM254,42h4v4h-4zM254,46h4v4h-4zM254,50h4v4h-4zM254,54h4v4h-4zM254,58h4v4h-4zM254,62h4v4h-4zM254,66h4v4h-4zM258,70h4v4h-4zM258,74h4v4h-4z"/>
+      <path fill="#FFF2D8" d="M294,14h24v4h-24zM282,18h48v4h-48zM274,22h60v4h-60zM270,26h68v4h-68zM266,30h16v4h-16zM294,30h44v4h-44zM262,34h16v4h-16zM294,34h48v4h-48zM262,38h16v4h-16zM290,38h52v4h-52zM258,42h84v4h-84zM258,46h80v4h-80zM258,50h24v4h-24zM290,50h24v4h-24zM322,50h16v4h-16zM258,54h20v4h-20zM282,54h8v4h-8zM294,54h16v4h-16zM314,54h8v4h-8zM326,54h12v4h-12zM258,58h76v4h-76zM258,62h72v4h-72zM258,66h12v4h-12zM278,66h48v4h-48zM262,70h36v4h-36zM302,70h20v4h-20zM266,74h52v4h-52zM270,78h40v4h-40zM286,82h8v4h-8zM302,94h12v4h-12zM330,94h12v4h-12zM302,98h12v4h-12zM330,98h12v4h-12zM302,102h4v4h-4zM310,102h4v4h-4zM330,102h4v4h-4zM338,102h4v4h-4z"/>
+      <path fill="#E6F5FF" d="M354,14h8v4h-8zM346,18h16v4h-16zM342,22h20v4h-20zM346,26h8v4h-8zM358,26h4v4h-4z"/>
+      <path fill="#F5DDB3" d="M338,26h4v4h-4zM338,30h4v4h-4zM342,34h4v4h-4zM342,38h4v4h-4zM342,42h4v4h-4zM338,46h8v4h-8zM338,50h8v4h-8zM338,54h4v4h-4zM334,58h8v4h-8zM330,62h8v4h-8zM326,66h4v4h-4zM322,70h8v4h-8zM262,74h4v4h-4zM318,74h8v4h-8zM266,78h4v4h-4zM310,78h12v4h-12zM270,82h16v4h-16zM294,82h20v4h-20zM282,86h16v4h-16zM306,102h4v4h-4zM334,102h4v4h-4z"/>
+      <path fill="#B2D8F3" d="M354,26h4v4h-4zM350,30h8v4h-8zM350,34h4v4h-4z"/>
+      <path fill="#FFFCF3" d="M282,30h12v4h-12zM278,34h16v4h-16zM278,38h12v4h-12z"/>
+      <path fill="#E3BC8A" d="M342,30h4v4h-4zM346,38h4v4h-4zM346,42h4v4h-4zM346,46h8v4h-8zM346,50h8v4h-8zM342,54h12v4h-12zM342,58h12v4h-12zM338,62h16v4h-16zM338,66h12v4h-12zM330,70h20v4h-20zM326,74h20v4h-20zM322,78h24v4h-24zM314,82h28v4h-28zM274,86h8v4h-8zM298,86h4v4h-4zM314,86h16v4h-16z"/>
+      <path fill="#F2928C" d="M270,66h8v4h-8zM330,66h8v4h-8z"/></g>
+  </g>
+
+  <!-- 4. Pixling Night-Navy Desk Paper (`DESIGN.md` SpeechPalette: #1E2131, edge #5C6284, 3pt hard shadow) -->
+  <g id="speech-window">
+    <rect x="412" y="37" width="342" height="208" rx="6" fill="rgba(8, 9, 16, 0.55)"/>
+    <polygon points="412,69 400,77 412,85" fill="rgba(8, 9, 16, 0.55)"/>
+
+    <rect x="412" y="34" width="342" height="208" rx="6" fill="#1E2131" stroke="#5C6284" stroke-width="1"/>
+
+    <polygon points="413,66 400,74 413,82" fill="#1E2131"/>
+    <polyline points="412,66 400,74 412,82" fill="none" stroke="#5C6284" stroke-width="1" stroke-linejoin="round"/>
+
+    <rect x="422" y="24" width="150" height="20" rx="4" fill="#1E2131" stroke="#5C6284" stroke-width="1"/>
+    <text x="430" y="38" class="font-ui" font-size="11.5" fill="#B3B8CC">
+      <tspan fill="#F4ECDC" font-weight="700">Claude Code</tspan> · Just now
+    </text>
+
+    <text x="428" y="68" class="font-ui" font-size="14" font-weight="400" fill="#F4ECDC">312 tests passed.</text>
+
+    <rect x="418" y="86" width="330" height="148" rx="4" fill="#2C3144"/>
+    <path d="M420,86 h2 v148 h-2 a2,2 0 0 1 -2,-2 v-144 a2,2 0 0 1 2,-2 z" fill="#F497AE"/>
+
+    <g class="chip-deploy-idle">
+      <text x="430" y="108" class="font-ui" font-size="11.5" fill="#B3B8CC">
+        <tspan fill="#F497AE" font-weight="700">?</tspan> <tspan fill="#F4ECDC" font-weight="700">Claude Code</tspan> · Just now
+      </text>
+    </g>
+    <g class="chip-deploy-on">
+      <text x="430" y="108" class="font-ui" font-size="11.5" fill="#B3B8CC">
+        <tspan fill="#F497AE" font-weight="700">✓</tspan> <tspan fill="#F4ECDC" font-weight="700">Claude Code</tspan> · Just now
+      </text>
+    </g>
+
+    <text x="430" y="134" class="font-ui" font-size="14.5" font-weight="500" fill="#F4ECDC">Deploy to staging?</text>
+
+    <g class="chip-deploy-idle">
+      <rect x="430" y="150" width="306" height="32" rx="4" fill="#2C3144" stroke="#F497AE" stroke-width="2"/>
+      <text x="442" y="171" class="font-ui" font-size="13.5" fill="#F4ECDC">Deploy</text>
+    </g>
+    <g class="chip-deploy-on">
+      <rect x="430" y="150" width="306" height="32" rx="4" fill="#F497AE"/>
+      <text x="442" y="171" class="font-ui" font-size="13.5" font-weight="700" fill="#1E2131">✓ Deploy</text>
+    </g>
+
+    <g class="chip-notyet">
+      <rect x="430" y="190" width="306" height="32" rx="4" fill="none" stroke="#5C6284" stroke-width="1"/>
+      <text x="442" y="211" class="font-ui" font-size="13.5" fill="#F4ECDC">Not yet</text>
+    </g>
+  </g>
+</svg>
